@@ -8,5 +8,5 @@ Console.WriteLine($"Date:{currentDate}");
 Console.WriteLine($"Machine Name:{machineName}");
 
 Console.WriteLine("Please enter a message:");
-string userInput = Console.ReadLine();
+int userInput = Convert.ToInt32(Console.readLine());
 Console.WriteLine($" You entered:{userInput}");

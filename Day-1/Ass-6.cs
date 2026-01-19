@@ -4,10 +4,7 @@ namespace ConstVsReadonly
 {
     class Order
     {
-
         public const double TaxRate = 0.08;
-
-
         public readonly string OrderId;
 
         public Order(string id)
@@ -15,10 +12,7 @@ namespace ConstVsReadonly
             OrderId = id;
         }
 
-        public void AttemptModification()
-        {
-
-        }
+        public void AttemptModification(){}
     }
 
     class Program
@@ -29,7 +23,6 @@ namespace ConstVsReadonly
 
             Console.WriteLine($"Order ID: {myOrder.OrderId}");
             Console.WriteLine($"Tax Rate: {Order.TaxRate}");
-
 
         }
     }
