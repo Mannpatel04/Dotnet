@@ -7,7 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <StartupObject>OOP_1.Ass3</StartupObject>
+    <StartupObject>OOP_1.StudentInfo</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
