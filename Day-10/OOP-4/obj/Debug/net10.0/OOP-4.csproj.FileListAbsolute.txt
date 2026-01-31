@@ -1,0 +1,15 @@
+D:\C#\Day-10\OOP-4\bin\Debug\net10.0\OOP-4.exe
+D:\C#\Day-10\OOP-4\bin\Debug\net10.0\OOP-4.deps.json
+D:\C#\Day-10\OOP-4\bin\Debug\net10.0\OOP-4.runtimeconfig.json
+D:\C#\Day-10\OOP-4\bin\Debug\net10.0\OOP-4.dll
+D:\C#\Day-10\OOP-4\bin\Debug\net10.0\OOP-4.pdb
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.AssemblyInfoInputs.cache
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.AssemblyInfo.cs
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.csproj.CoreCompileInputs.cache
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.sourcelink.json
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.dll
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\refint\OOP-4.dll
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.pdb
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\OOP-4.genruntimeconfig.cache
+D:\C#\Day-10\OOP-4\obj\Debug\net10.0\ref\OOP-4.dll
