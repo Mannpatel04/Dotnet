@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LINQ-1</id>
+    <version>1.0.0</version>
+    <authors>LINQ-1</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="625689913a7a7ba85140499c8a59b8099b2497ae" />
+    <dependencies>
+      <group targetFramework="net10.0">
+        <dependency id="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" version="1.23.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.runtimeconfig.json" target="lib\net10.0\LINQ-1.runtimeconfig.json" />
+    <file src="D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.dll" target="lib\net10.0\LINQ-1.dll" />
+  </files>
+</package>

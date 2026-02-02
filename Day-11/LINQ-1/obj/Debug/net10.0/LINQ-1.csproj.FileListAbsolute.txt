@@ -1,0 +1,15 @@
+D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.exe
+D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.deps.json
+D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.runtimeconfig.json
+D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.dll
+D:\C#\Day-11\LINQ-1\bin\Debug\net10.0\LINQ-1.pdb
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.AssemblyInfoInputs.cache
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.AssemblyInfo.cs
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.csproj.CoreCompileInputs.cache
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.sourcelink.json
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.dll
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\refint\LINQ-1.dll
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.pdb
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\LINQ-1.genruntimeconfig.cache
+D:\C#\Day-11\LINQ-1\obj\Debug\net10.0\ref\LINQ-1.dll
