@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLgtgigRK1Y=",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Day-12\\LINQ-2\\LINQ-2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Patel\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+  ],
+  "logs": []
+}
