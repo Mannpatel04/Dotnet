@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TY+qgc8LzFE=",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Day-13\\Linq-3\\Linq-3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Patel\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512"
+  ],
+  "logs": []
+}

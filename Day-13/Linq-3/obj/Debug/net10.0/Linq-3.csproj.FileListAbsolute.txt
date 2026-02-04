@@ -1,0 +1,15 @@
+D:\C#\Day-13\Linq-3\bin\Debug\net10.0\Linq-3.exe
+D:\C#\Day-13\Linq-3\bin\Debug\net10.0\Linq-3.deps.json
+D:\C#\Day-13\Linq-3\bin\Debug\net10.0\Linq-3.runtimeconfig.json
+D:\C#\Day-13\Linq-3\bin\Debug\net10.0\Linq-3.dll
+D:\C#\Day-13\Linq-3\bin\Debug\net10.0\Linq-3.pdb
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.AssemblyInfoInputs.cache
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.AssemblyInfo.cs
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.csproj.CoreCompileInputs.cache
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.sourcelink.json
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.dll
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\refint\Linq-3.dll
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.pdb
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\Linq-3.genruntimeconfig.cache
+D:\C#\Day-13\Linq-3\obj\Debug\net10.0\ref\Linq-3.dll
