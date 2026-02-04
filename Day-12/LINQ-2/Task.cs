@@ -106,7 +106,7 @@ namespace LINQ_2
 
             //Explaination:-
             //Join:- I used this for the join of two table. bassically it is inner join.where it retuns only commen values
-            //Group join:-
+            //Group join:-combines two collections and groups matching records into a collection.
             #endregion
 
             #region Task-3
