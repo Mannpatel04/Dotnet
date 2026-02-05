@@ -8,7 +8,6 @@
         public string Department;
         public int Salary;
         public int DepartmentId;
-
     }
 
     class Student
@@ -30,7 +29,13 @@
         public string ProductName;
         public int ProductPrice;
     }
-    
+
+    class Department
+    {
+        public int DepartmentId;
+        public string DepartmentName;
+    }
+
     class Product
     {
         public int ProductId;

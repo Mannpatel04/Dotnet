@@ -164,6 +164,58 @@ namespace Linq_3
 
             #endregion
 
+            #region Task-6
+            //var employee = new List<Employee>()
+            //{
+            //    new Employee {EmployeeId = 1, Name = "Mann", DepartmentId = 1, },
+            //    new Employee {EmployeeId = 2, Name = "Aayush",DepartmentId = 1,},
+            //    new Employee {EmployeeId = 3, Name = "Niken", DepartmentId = 2,},
+            //    new Employee {EmployeeId = 4, Name = "Smit", DepartmentId = 4, },
+            //    new Employee {EmployeeId = 5, Name = "Om",  DepartmentId = 5,  },
+            //    new Employee {EmployeeId = 6, Name = "Ayush",DepartmentId = 3, },
+            //};
+
+            //var department = new List<Department>()
+            //{
+            //    new Department {DepartmentId = 1, DepartmentName = ".Net"},
+            //    new Department {DepartmentId = 2, DepartmentName = "Java"},
+            //    new Department {DepartmentId = 3, DepartmentName = "Devops"},
+            //    new Department {DepartmentId = 4, DepartmentName = "MERN"},
+            //    new Department {DepartmentId = 5, DepartmentName = "Python"},
+            //};
+
+            ////Wrong way 
+            //var result = employee.Select(e => new { EmpolyeeName = e.Name, DepartmentName = department.Where(d=> d.DepartmentId  == e.DepartmentId).Select(d=> d.DepartmentName).FirstOrDefault()});
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item.EmpolyeeName} - {item.DepartmentName}");
+            //}
+            ////correct way
+            //var Result = employee
+            //     .Join(department,
+            //           e => e.DepartmentId,
+            //           d => d.DepartmentId,
+            //           (e, d) => new
+            //           {
+            //               EmployeeName = e.Name,
+            //               DepartmentName = d.DepartmentName
+            //           });
+            //Console.WriteLine("");
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($"{item.EmpolyeeName} - {item.DepartmentName}");
+            //}
+
+            /*
+             - Explain what N+1 problem is and w.
+             => N+1 problem occurs when an application first loads a list of records (1 query) and then executes an additional query for each record (N queries), causing many unnecessary database calls.
+
+             - Why it is bad? - because of too many database calls and it slows the performance because of this it gives high load on server, poor scalability.
+             - Using Join or Include fetches everything in a single query and avoids this issue.
+             */
+
+            #endregion
+
             #region Task-7
             //List<Product> products = new List<Product>
             //{
@@ -266,7 +318,7 @@ namespace Linq_3
             /* 
              -Use of ToList():- Use ToList() when we need the snapshot, generally LINQ query use  Deferred execution thats why whenever the foreach loop runs then it re-evaulates the entire query and gives Live result to despite this this method tack snapshot of data when it calls and store the fixed copy.
                               -In simplw words use this when you have multiple loops and avoid re-running heavy queries and wants Stable results.
-             
+
             -Avoid multiple enumeration:- to avoid multiple enumeration like foreach loop re-runs the same query use the ToList() method as mention Above.
 
             -Use Any() instead of Count() >0 - because Count() checks ALL elements and Any() stops after its first match.
