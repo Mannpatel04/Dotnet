@@ -164,6 +164,38 @@ namespace Linq_3
 
             #endregion
 
+            #region Task-5
+            //List<Employee> employees = new List<Employee>()
+            //{
+            //    new Employee{ EmployeeId=1, Name="Niken", Salary=25000, Department="HR"},
+            //    new Employee{ EmployeeId=2, Name="Mann", Salary=40000, Department=".net"},
+            //    new Employee{ EmployeeId=3, Name="Ayush", Salary=28000, Department="Java"}
+            //};
+
+            //IEnumerable<Employee> result = employees.Where(e => e.Salary > 30000);
+            // foreach(var e in result)
+            //{
+            //    Console.WriteLine($"{e.Name}");
+            //}
+            //IQueryable<Employee> Result = employees.AsQueryable().Where(f => f.Salary > 30000);
+            //foreach (var e in result)
+            //{
+            //    Console.WriteLine($"{e.Name}");
+            //}
+
+            /* Write the difference between IEnumerable and IQueryable in simple words.
+             - IEnumerable<> - It loads the data in memory(Ram).
+                             - It Fetch the all data and then it filters.
+                             - It Slower for large amount of data.
+                             - execution place at Client Side.
+             - IQueryable<> - It runs the Query directly on DB server. 
+                            - It runs query on DB and and retuns the filtered data, in simple word it fetch the data after filtering.
+                            - It faster for large amount of data.
+                            - execution place at server side.
+            */
+
+            #endregion
+
             #region Task-6
             //var employee = new List<Employee>()
             //{
