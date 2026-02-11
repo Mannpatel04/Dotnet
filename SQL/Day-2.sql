@@ -116,13 +116,28 @@ JOIN EmployeeSkill ES ON E.EmployeeID = ES.EmployeeID
 GROUP BY E.EmployeeID, E.EmployeeName
 HAVING COUNT(ES.SkillID) > 1;
 
+--query 5
 
---Question 5
---The Primary Key is the "Unique ID" for a table. It ensures that every single row can be identified without any confusion.and it cannot be null.
---EmployeeID in the Employee table.
+--primary key
+ALTER TABLE Department ADD CONSTRAINT PK_Department PRIMARY KEY (DepartmentID);
+ALTER TABLE Skill ADD CONSTRAINT PK_Skill PRIMARY KEY (SkillID);
+ALTER TABLE Employee ADD CONSTRAINT PK_Employee PRIMARY KEY (EmployeeID);
+ALTER TABLE EmployeeSkill ADD CONSTRAINT PK_EmployeeSkill PRIMARY KEY (EmployeeID, SkillID);
 
---Foreign key is the "Link" between two tables, It is a column in one table that points to the Primary Key of another table.
---Example: DepartmentID in the Employee table "points back" to the DepartmentID in the Department table.
+--foreign key
+ALTER TABLE Employee 
+ADD CONSTRAINT FK_Employee_Department 
+FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID);
 
---A Unique Key ensures that all values in a column are different from one another, similar to a Primary Key, but with more flexibility. you can have a multiple unique key in the table, null value allowed
---Example: An Email column should be unique so two employees don't share the same login.
+ALTER TABLE EmployeeSkill 
+ADD CONSTRAINT FK_EmployeeSkill_Employee 
+FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID);
+
+ALTER TABLE EmployeeSkill 
+ADD CONSTRAINT FK_EmployeeSkill_Skill 
+FOREIGN KEY (SkillID) REFERENCES Skill(SkillID);
+
+--Unique key
+ALTER TABLE Department ADD CONSTRAINT UQ_DeptName UNIQUE (DeptName);
+ALTER TABLE Skill ADD CONSTRAINT UQ_SkillName UNIQUE (SkillName);
+ALTER TABLE Employee ADD CONSTRAINT UQ_EmployeeEmail UNIQUE (Email);
