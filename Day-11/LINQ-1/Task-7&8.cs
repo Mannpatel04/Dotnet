@@ -74,7 +74,7 @@ namespace LINQ_1
 
             //Explaination:-
             //selectMany() is used for projects each element into a collection and then flattens all those collections into a single sequence.
-
+            //Insort SelectMany converts one-to-many data into one flat list.
 
 
 

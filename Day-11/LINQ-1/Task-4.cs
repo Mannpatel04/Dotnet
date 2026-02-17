@@ -27,3 +27,8 @@ namespace LINQ_1
         }
     }
 }
+
+
+//Explaination:-
+//here there thenby() used. basically it is used for the secondary sorting in ascending order.
+//after the primary sort is applied it enables you to sort the data in multiple criteria.

@@ -9,7 +9,7 @@ namespace LINQ_1
         static void Main()
         {
             var employee = new[]
-           {
+            {
                 new {EmloyeeID = 1, Name = "Mann", salary = 40000},
                 new {EmloyeeID = 1, Name = "Ayush", salary = 87000},
                 new {EmloyeeID = 1, Name = "Niken", salary = 22000},

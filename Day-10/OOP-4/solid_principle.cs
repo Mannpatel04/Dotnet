@@ -25,16 +25,20 @@ namespace OOP_4
         double CalculatePrice(Order odr);
     }
     #endregion
+
+    #region Order repository interface 
     public interface IorderRepository
     {
         void SaveOrder(Order odr);
     }
+    #endregion
 
+    #region Notification interface
     public interface INotificationServices
     {
         void SendNotification(string message);
     }
-
+    #endregion
 
     public class PriceCalculator : IpriceCalculator
     {
