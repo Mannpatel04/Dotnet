@@ -9,11 +9,11 @@ class day1
     {
 
         using var Context = new AppDBContext();
+        {  CRUD SCCrud  = new CRUD();
+        SCCrud.StartCRUD(Context);
 
-        StudentCourseCRUD SCCrud  = new StudentCourseCRUD();
-        SCCrud.StartStudentCourseCRUD(Context);
+        }
         
-
 
     }
 

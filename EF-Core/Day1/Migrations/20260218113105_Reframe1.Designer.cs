@@ -4,6 +4,7 @@ using EF_Core_Demo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_Core_Demo.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20260218113105_Reframe1")]
+    partial class Reframe1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,19 +51,22 @@ namespace EF_Core_Demo.Migrations
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TrainerId")
+                    b.Property<int>("Trainer_ID")
                         .HasColumnType("int");
+
+                    b.Property<int>("Trainer_ID1")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("startDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("ID");
 
                     b.HasIndex("CourseId");
 
-                    b.HasIndex("TrainerId");
+                    b.HasIndex("Trainer_ID1");
 
-                    b.ToTable("Batches");
+                    b.ToTable("Batchs");
                 });
 
             modelBuilder.Entity("Day1.Model.Course", b =>
@@ -148,21 +154,21 @@ namespace EF_Core_Demo.Migrations
 
             modelBuilder.Entity("Day1.Model.Batch", b =>
                 {
-                    b.HasOne("Day1.Model.Course", "Course")
+                    b.HasOne("Day1.Model.Course", "course")
                         .WithMany("Batches")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Day1.Model.Trainer", "Trainer")
+                    b.HasOne("Day1.Model.Trainer", "trainer")
                         .WithMany("Batches")
-                        .HasForeignKey("TrainerId")
+                        .HasForeignKey("Trainer_ID1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Course");
+                    b.Navigation("course");
 
-                    b.Navigation("Trainer");
+                    b.Navigation("trainer");
                 });
 
             modelBuilder.Entity("Day1.Model.Course", b =>

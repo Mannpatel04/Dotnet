@@ -8,7 +8,8 @@ namespace EF_Core_Demo.Data
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Trainer> Trainers { get; set; } 
-        public DbSet<Batch> Batchs { get; set; }    
+        public DbSet<Batch> Batches { get; set; }    
+        
 
 
             
