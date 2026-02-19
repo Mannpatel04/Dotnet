@@ -1,5 +1,6 @@
 ﻿using Day1.Model;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace EF_Core_Demo.Data
 {
@@ -15,7 +16,7 @@ namespace EF_Core_Demo.Data
             
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server =MANN\\SQLEXPRESS; Database =EF_Demo; Trusted_Connection = True; TrustServerCertificate = true");
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer("Server =MANN\\SQLEXPRESS; Database =EF_Demo; Trusted_Connection = True; TrustServerCertificate = true").LogTo(Console.WriteLine, LogLevel.Information); ;
         }
 
     }

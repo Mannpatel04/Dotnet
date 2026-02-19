@@ -154,3 +154,5 @@ D:\C#\EF-Core\Day1\obj\Debug\net10.0\refint\EF_Core_Demo.dll
 D:\C#\EF-Core\Day1\obj\Debug\net10.0\EF_Core_Demo.pdb
 D:\C#\EF-Core\Day1\obj\Debug\net10.0\EF_Core_Demo.genruntimeconfig.cache
 D:\C#\EF-Core\Day1\obj\Debug\net10.0\ref\EF_Core_Demo.dll
+D:\C#\EF-Core\Day1\bin\Debug\net10.0\Castle.Core.dll
+D:\C#\EF-Core\Day1\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Proxies.dll

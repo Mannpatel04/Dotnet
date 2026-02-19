@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Day1.Model
 {
-    class Student
+    public class Student
     {
         [Key]
         public int Student_Id { get; set; }
@@ -17,11 +17,11 @@ namespace Day1.Model
         public string? Email { get; set; }
         [Column(TypeName = "Date")]
         public DateTime CreateDate {  get; set; }
-        public List<Course> Courses { get; set; } = new List<Course>();
+        public virtual List<Course> Courses { get; set; } = new List<Course>();
         
     }
 
-    class Course
+    public class Course
     {
         [Key]
         public int Course_Id { get; set; }
@@ -30,24 +30,24 @@ namespace Day1.Model
         [Column(TypeName = "Decimal(18,2)")] 
         public Decimal Fees { get; set; }
         public int DurationInMonths { get; set; }
-        public List<Batch> Batches { get; set; } = new List<Batch>();
+        public virtual List<Batch> Batches { get; set; } = new List<Batch>();
 
 
-        public List<Student> Students { get; set; } = new List<Student>();
+        public virtual List<Student> Students { get; set; } = new List<Student>();
     }
 
 
-    class Trainer
+    public class Trainer
     {
         [Key]
         public int Trainer_ID { get; set; }   
         [Required]
         public string Name { get; set; }
         public int Experience_Years { get; set; }
-        public List<Batch> Batches { get; set; } = new List<Batch>();   
+        public virtual List<Batch> Batches { get; set; } = new List<Batch>();   
     }
 
-    class Batch
+    public class Batch
     {
         [Key]
         public int ID { get; set; }
@@ -55,10 +55,10 @@ namespace Day1.Model
 
         [ForeignKey(nameof(Course))]
         public int CourseId { get; set; }
-        public Course Course { get; set; }
+        public virtual Course Course { get; set; }
 
         [ForeignKey(nameof(Trainer))]
         public int TrainerId { get; set; }
-        public Trainer Trainer { get; set; }
+        public virtual Trainer Trainer { get; set; }
     }
 }
