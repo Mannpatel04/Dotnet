@@ -50,7 +50,12 @@ namespace EF_Core_Demo.CRUD
                 Console.WriteLine("20.Fix N+1 Problem");
                 Console.WriteLine("");
 
-                Console.WriteLine("21.Exit");
+                Console.WriteLine("21.Preformation of Detached");
+                Console.WriteLine("22.Preformation of AsNoTracking");
+                Console.WriteLine("23.Update The Attached Data");
+                Console.WriteLine(" ");
+
+                Console.WriteLine("24.Exit");
                 Console.WriteLine(" ");
 
 
@@ -117,6 +122,15 @@ namespace EF_Core_Demo.CRUD
                         FixNPlusOneUsingInclude(context);
                         break;
                     case 21:
+                        PerformationOfDetached(context); 
+                        break;
+                    case 22:
+                        PerformAsNoTracking(context);
+                        break;
+                    case 23:
+                        UpdateAttachedData(context); 
+                        break;
+                    case 24:
                         exit = true;
                         break;
 
@@ -520,6 +534,64 @@ namespace EF_Core_Demo.CRUD
                     Console.WriteLine($"Course: {c.Title}");
                 }
             }
+        }
+       static void PerformationOfDetached(AppDBContext context)
+        {
+            var student = context.Students.FirstOrDefault();
+            Console.WriteLine($"Student Name Before Updation: {student.Name}");
+
+            context.Entry(student).State = EntityState.Detached;
+
+            Console.Write("Enter student's new name: ");
+            student.Name = Console.ReadLine();
+            context.SaveChanges();
+
+            student = context.Students.FirstOrDefault();
+            Console.WriteLine($"Student Name After Updation: {student.Name}");
+
+        }
+       static void PerformAsNoTracking(AppDBContext context)
+        {
+            Console.WriteLine("AsNoTracking...");
+            var students = context.Students.AsNoTracking();
+
+            var student1 = students.FirstOrDefault();
+            var student2 = students.FirstOrDefault(s => s.Student_Id == 2);
+            Console.WriteLine($"Student 1 Name Before Updation: {student1.Name}");
+            Console.WriteLine($"Student 2 Name Before Updation: {student2.Name}");
+
+
+            Console.Write("Enter new Name For Student 1: ");
+            student1.Name = Console.ReadLine();
+            Console.Write("Enter new Name For Student 2: ");
+            student2.Name = Console.ReadLine();
+
+            context.SaveChanges();
+
+            student1 = context.Students.FirstOrDefault();
+            student2 = context.Students.FirstOrDefault(s => s.Student_Id == 2);
+            Console.WriteLine($"Student 1 Name After Updation: {student1.Name}");
+            Console.WriteLine($"Student 2 Name After Updation: {student2.Name}");
+        }
+       static void UpdateAttachedData(AppDBContext context)
+        {
+            var student = context.Students.AsNoTracking().FirstOrDefault();
+
+            Console.WriteLine($"Student Name Before Updation: {student.Name}");
+
+
+            Console.Write("Enter new Name For Student: ");
+            student.Name = Console.ReadLine();
+
+            Console.WriteLine("Before: " + context.Entry(student).State);
+            context.Attach(student);
+       
+
+            Console.WriteLine("After: " + context.Entry(student).State);
+            context.SaveChanges();
+
+            var student1 = context.Students.FirstOrDefault();
+            Console.WriteLine($"Student 1 Name After Updation: {student1.Name}");
         }
     }
 }       
